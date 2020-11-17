@@ -1,1 +1,52 @@
-hello
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>task</title>
+
+<body>
+    <script>
+
+
+
+        var genres = ["机を片付ける", "牛乳を買う", "散歩する"];
+        var tasks = ["掃除", "買い物", "運動"];
+
+        console.log("=============");
+        console.log("現在持っているタスク一覧");
+        console.log("=============");
+
+        for (var i = 0; i < tasks.length; i++) {
+            console.log(`${i}: [内容]${genres[i]}、[ジャンル]${tasks[i]}`);
+        }
+
+
+
+
+        var type = prompt("タスクを入力してください");
+
+        var content = prompt("ジャンルを入力してください");
+
+
+　　　　　genres.push(type);
+        tasks.push(content);
+        
+
+        alert("新しいタスクを追加しました");
+
+
+
+        console.log("=============");
+        console.log("現在持っているタスク一覧");
+        console.log("=============");
+
+        for (var i = 0; i < tasks.length; i++) {
+            console.log(`${i}: [内容]${genres[i]}、[ジャンル]${tasks[i]}`);
+        };
+
+
+    </script>
+</body>
+
+</html>
